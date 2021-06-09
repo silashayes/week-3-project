@@ -28,7 +28,7 @@ h2 {
   font-family: 'Open Sans', sans-serif;
   font-size: 20px;
   color: rgba(220, 180, 255, 1);
-  margin: 10px 0 70px 0;
+  margin: 10px 0 20px 0;
 }
 ul {
   padding: 10px;
@@ -36,6 +36,7 @@ ul {
   background: rgba(40, 40, 40, 1);
   text-align: center;
   text-align: center;
+  border-radius: 12px;
 }
 li {
   display: inline;
@@ -51,9 +52,9 @@ p {
   color: rgba(255,255,255,1);
   font-family: 'Open Sans', sans-serif;
   background: black;
-  background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
-  background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
-  background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: linear-gradient(bottom, rgba(40,40,40,1), rgba(40,40,40,.5));
+  background: -webkit-linear-gradient(bottom, rgba(40,40,40,1), rgba(40,40,40,.5));
+  background: -moz-linear-gradient(bottom, rgba(40,40,40,1), rgba(40,40,40,.5));
   padding: 10px;
   line-height: 28px;
   text-align: justify;
@@ -64,16 +65,26 @@ p {
   transition: height .5s;
   -webkit-transition: height .5s;
   -moz-transition: height .5s;
+  border-radius: 12px;
 }
 
 small {
   opacity: 0;
 }
 
-.show-description p {
+/*.show-description p {
   height: 150px;
 }
-
+*/
+.show-description .text1 {
+  height: 150px;
+}
+.show-description .text2 {
+  height: 120px;
+}
+.show-description .text3 {
+  height: 120px;
+}
 .show-description small {
   opacity: 1;
 }
@@ -87,48 +98,61 @@ small {
 .third{
   background-image: url("three.jpg");
 }
+
 .price {
   float: right;
 }
-.last {
+
+.textthree {
   padding: 0 0 100px 0;
 }
 .page1 {
   color: rgba(220, 180, 255, 1);
+}
+img {
+  display: block;
+  border-radius: 12px;
+  max-width: 200px;
+  margin: 0 auto 20px auto;
+  text-align: center;
+  border:5px solid rgba(255, 255, 255, 1);
 }
 </style>
 
 </head>
 
 <body>
-<h1>Launch Projects</h1>
-<h2>A Collection of Launch Data Science Projects by Silas Hayes</h2>
-<ul>
-  <li><a class="page1" href="index.html" style="text-decoration:none">Project Overview</a></li>
-  <li><a class="page2" href="proj1.html" style="text-decoration:none">Project 1</a></li>
-  <li><a class="page3" href="index.html" style="text-decoration:none">Project 2</a></li>
-  <li><a class="page4" href="index.html" style="text-decoration:none">Project 3</a></li>
-</ul>
-<div class="first">
-  <p>Project 1: Data Analytics<br />
-  <small>The first project I worked on simulated a task I'd be assigned as a data science intern in an analytics / visualization-focused role. I was assigned a dataset, was given a specific question through which to analyze the data, and presented my data-driven answers to this question through a slide deck presentation and interactive data visualization.</small></p>
-</div>
+  <h1>Launch Projects</h1>
+  <h2>A Collection of Launch Data Science Projects by Silas Hayes</h2>
+  <img src="Profile.jpg">
+  <ul>
+    <li><a class="page1" href="index.html" style="text-decoration:none">Project Overview</a></li>
+    <li><a class="page2" href="proj1.html" style="text-decoration:none">Project 1</a></li>
+    <li><a class="page3" href="index.html" style="text-decoration:none">Project 2</a></li>
+    <li><a class="page4" href="index.html" style="text-decoration:none">Project 3</a></li>
+  </ul>
+  <div class="first">
+    <p class="text1">Project 1: Data Analytics<br />
+    <small>The first project I worked on simulated a task I'd be assigned as a data science intern in an analytics / visualization-focused role. I was assigned a dataset, was given a specific question through which to analyze the data, and presented my data-driven answers to this question through a slide deck presentation and interactive data visualization.</small>
+  </p>
+  </div>
 
-<div class="second">
-  <p>Project 2: Database Structures<br />
-  <small>The second project was designed to give me practice designing and pulling data from a wide variety of database architectures. Collaboratively, my group and I created a set of data based on ourselves, used it to populate three different database architectures, and wrote scripts to query each of them.</small></p>
-</div>
+  <div class="second">
+    <p class="text2">Project 2: Database Structures<br />
+    <small>The second project was designed to give me practice designing and pulling data from a wide variety of database architectures. Collaboratively, my group and I created a set of data based on ourselves, used it to populate three different database architectures, and wrote scripts to query each of them.</small>
+  </p>
+  </div>
   
-<div class="third">
-  <p>Project 3: Intro to Software Engineering<br />
-  <small class="last"> This project prepared me to more smoothly integrate into Scenthound's more software engineering-focused tasks. I learned the basics of HTML, CSS, and JavaScript, and then hosted a basic website on Netlify. Additionally, I learned about how React can link up with Firestore by creating an interactive app using that software stack.</small></p>
-</div>
+  <div class="third">
+    <p class="text3">Project 3: Intro to Software Engineering<br />
+    <small class="textthree"> This project prepared me to more smoothly integrate into Scenthound's more software engineering-focused tasks. I learned the basics of HTML, CSS, and JavaScript, and then hosted a basic website on Netlify. Additionally, I learned about how React can link up with Firestore by creating an interactive app using that software stack.</small>
+  </p>
+  </div>
 
-<script>
-  $('div').on('click', function() {
+  <script>
+    $('div').on('click', function() {
       $(this).toggleClass('show-description');
-  });
-  $
-</script>
+    });
+  </script>
 
 </body>
