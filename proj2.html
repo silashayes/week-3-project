@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-  <title>Project 1</title>
+  <title>Project 2</title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
 <style>
@@ -29,6 +29,10 @@ h2 {
   font-size: 20px;
   color: rgba(220, 180, 255, 1);
   margin: 10px 0 30px 0;
+}
+h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
 }
 ul {
   padding: 10px;
@@ -73,7 +77,12 @@ img {
   border-radius: 12px;
   background: rgba(255, 255, 255, 1);
 }
-
+iframe {
+  max-width: 700px;
+  height: 430px;
+  border-radius: 12px;
+  margin: 10px 0 0 0;
+}
 .first{
   background-image: url("one.jpg");
 }
@@ -89,8 +98,11 @@ img {
 .last {
   padding: 0 0 100px 0;
 }
-.page2 {
+.page3 {
   color: rgba(220, 180, 255, 1);
+}
+.med_article {
+  margin: 50px 0 0 0;
 }
 </style>
 
@@ -105,18 +117,17 @@ img {
   <li><a class="page3" href="proj2.html" style="text-decoration:none">Project 2</a></li>
   <li><a class="page4" href="proj3.html" style="text-decoration:none">Project 3</a></li>
 </ul>
-<div class="first">
-  <p>Project 1: Data Analytics<br />
-  <small>The dataset for this project involved survey data mainly from the US on individuals' titles,
-     roles, demographics, and salary. I was tasked with coming up with marketing suggestions for where
-      to target advertising for a fake company that matches employees to positions, and then makes money
-       based on that employee's salary. I used Python to clean the data, and below is a small window into the final result through some of the graphs
-        I created. The first graph uses Tableau as the basis for its map and the other two use matplotlib within Python.</small>
+<div class="second">
+  <p>Project 2: Database Structures<br />
+  <small>The three databases we worked on for this group project were MySQL, Neo4j, and MongoDB. 
+    We created the data for the databases based on ourselves in order to examine the differences between these three systems. 
+    After inputting all of our data and practicing some queries on each database, we wrote a Medium article for database novices, 
+    which you can find below. We also compared the three databases from a more technical standpoint and their pros and cons in a 
+    presentation, which is also below.
+  </small>
 </p>
 </div>
 
-<img src="Median_Comp.png">
-<img src="years_earnings.png">
-<img src="top_industries.png">
-
+<h3><a class="med_article" href="https://stephaniefissel.medium.com/databases-questions-answered-3a94899d1a11">Medium Article: Databases - Questions Answered</a></h3>
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTJq8gKVl2Kw4vU4Vx8u6N6YX6wgl5G0t6H7pIrXRlTqDTw3QBA23sh8YMNSKm7HRODfZ7llQCEh0Kn/embed?start=false&loop=true&delayms=5000" frameborder="0" width="1920" height="1109" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 </body>
